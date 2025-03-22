@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const skills = {
+  'Cyber Security & Networking': [
+    'Network security (Kali Linux, Wireshark)',
+    'Secure Systems Analysis & Design',
+    'Virtualisation (VMware, VirtualBox)',
+    'SIEM Concepts',
+    'Basic penetration testing & ethical hacking'
+  ],
+  'Programming Languages': [
+    'Java (Object-Oriented Development)',
+    'Python (Scripting and Automation)',
+    'Shell scripting (Bash)'
+  ],
+  'Tools & Platforms': [
+    'IntelliJ IDEA, Android Studio, Eclipse',
+    'Git & GitHub',
+    'Wireshark, Nmap, Burp Suite',
+    'SQLite, Derby, JDBC'
+  ],
+  'Professional Skills': [
+    'Attention to detail from financial background',
+    'Report writing & threat modelling',
+    'UML Diagrams (Use Case, Class, Sequence)',
+    'Strong communication and teamwork'
+  ]
+};
+---
+
+<Layout title="Skills - Elizabeth Tipper">
+  <main class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+    <div class="mx-auto max-w-3xl">
+      <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-12">
+        Technical & Professional Skills
+      </h1>
+
+      <div class="grid gap-12">
+        {Object.entries(skills).map(([category, skillList]) => (
+          <div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">{category}</h2>
+            <ul class="grid gap-3">
+              {skillList.map(skill => (
+                <li class="flex items-center">
+                  <span class="text-primary mr-2">▹</span>
+                  <span class="text-gray-600">{skill}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </main>
+</Layout>

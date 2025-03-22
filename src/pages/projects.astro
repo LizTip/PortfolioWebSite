@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const projects = [
+  {
+    title: '🛒 MiniStore System (Java)',
+    description: 'A 3-tier Java desktop application developed as part of an Object-Oriented Development module. Involves a product ordering system using MVC architecture, Derby databases, and Swing GUIs. My enhancements focused on improving the GUI layout, adding case-insensitive product search, and refining order management logic.',
+    tools: ['Java', 'Derby', 'IntelliJ', 'JUnit', 'GitHub']
+  },
+  {
+    title: '🔐 Network Security Lab (Kali Linux)',
+    description: 'Configured two Kali Linux VMs for a simulated secure environment. Used Wireshark for traffic analysis and conducted port scans to identify open services. Analysed vulnerabilities and documented mitigation techniques.',
+    tools: ['Kali Linux', 'Wireshark', 'Nmap', 'VirtualBox']
+  },
+  {
+    title: '📱 PantryPlanner Mobile App (Android)',
+    description: 'A Java-based Android app designed to help users plan meals based on pantry ingredients. Focused on secure data storage, intuitive UI, and smooth recipe lookup functionality.',
+    tools: ['Java', 'SQLite', 'Android Studio']
+  },
+  {
+    title: '🛡️ Secure System Design for SIEM',
+    description: 'Worked on a team project to design a SIEM system. My contributions included threat modelling, identifying countermeasures, and producing a security architecture diagram. I also authored the individual reflection on design ethics and privacy.',
+    tools: ['Threat Analysis', 'Security Diagrams', 'System Design', 'Ethical Considerations']
+  }
+];
+---
+
+<Layout title="Projects - Elizabeth Tipper">
+  <main class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+    <div class="mx-auto max-w-3xl">
+      <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-12">
+        Featured Projects
+      </h1>
+
+      <div class="grid gap-12">
+        {projects.map(project => (
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">{project.title}</h2>
+            <p class="text-gray-600 mb-6">{project.description}</p>
+            <div class="flex flex-wrap gap-2">
+              {project.tools.map(tool => (
+                <span class="px-3 py-1 bg-blue-50 text-primary rounded-full text-sm">
+                  {tool}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </main>
+</Layout>

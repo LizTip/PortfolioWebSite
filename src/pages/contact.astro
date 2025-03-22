@@ -1,0 +1,71 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact - Elizabeth Tipper">
+  <main class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+    <div class="mx-auto max-w-2xl">
+      <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">
+        Get In Touch
+      </h1>
+
+      <p class="text-lg text-gray-600 mb-8">
+        Whether you're looking for a junior cyber security analyst, a detail-oriented developer, or just want to connect—I'd love to hear from you.
+      </p>
+
+      <div class="grid gap-6 mb-12">
+        <a href="mailto:liztipper@gmail.com" class="flex items-center text-gray-600 hover:text-primary">
+          <span class="mr-2">📧</span>
+          liztipper@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/liz-tipper-4a5b27152" target="_blank" class="flex items-center text-gray-600 hover:text-primary">
+          <span class="mr-2">🔗</span>
+          LinkedIn Profile
+        </a>
+        <a href="https://github.com/LizTip" target="_blank" class="flex items-center text-gray-600 hover:text-primary">
+          <span class="mr-2">💻</span>
+          GitHub Profile
+        </a>
+      </div>
+
+      <form class="grid gap-6">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+          />
+        </div>
+        
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+          />
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </main>
+</Layout>
