@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="CV - Elizabeth Tipper">
+  <main class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+    <div class="mx-auto max-w-3xl">
+      <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-8">
+        Curriculum Vitae
+      </h1>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Education</h2>
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+          <h3 class="font-semibold text-lg">BSc (Hons) Computer Science with Cyber Security</h3>
+          <p class="text-gray-600">University of Brighton</p>
+          <p class="text-gray-600">2022 - Present</p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Technical Skills</h2>
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+          <ul class="grid gap-3">
+            <li class="flex items-center">
+              <span class="text-primary mr-2">▹</span>
+              <span class="text-gray-600">Java (Object-Oriented Development)</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-primary mr-2">▹</span>
+              <span class="text-gray-600">Python (Scripting and Automation)</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-primary mr-2">▹</span>
+              <span class="text-gray-600">Network Security (Kali Linux, Wireshark)</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-primary mr-2">▹</span>
+              <span class="text-gray-600">Secure Systems Analysis & Design</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Professional Experience</h2>
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+          <div class="mb-6">
+            <h3 class="font-semibold text-lg">PA and Billing Clerk</h3>
+            <p class="text-gray-600">Financial Services Industry</p>
+            <p class="text-gray-600">2012 - 2022</p>
+            <ul class="mt-3 grid gap-2">
+              <li class="flex items-start">
+                <span class="text-primary mr-2 mt-1">▹</span>
+                <span class="text-gray-600">Managed client accounts and financial records with high attention to detail</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary mr-2 mt-1">▹</span>
+                <span class="text-gray-600">Developed strong organizational and communication skills</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="flex justify-center">
+        <a 
+          href="/cv.pdf" 
+          download
+          class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+        >
+          Download Full CV
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>
